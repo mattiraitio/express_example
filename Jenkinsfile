@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('Delivery') {
+      steps {
+        sh 'npm start'
+      }
+    }
+
   }
   environment {
     express_example = ''
