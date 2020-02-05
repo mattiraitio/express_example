@@ -14,6 +14,12 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'npm test'
+      }
+    }
+
   }
   environment {
     express_example = ''
